@@ -1,0 +1,105 @@
+@import url("./inter.css");
+
+@font-face {
+    font-family: 'Minecraft Regular';
+    src: url("../fonts/Minecraft\ Regular.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Minecraft Regular';
+    src: url("../fonts/Minecraft\ Bold.otf") format("opentype");
+    font-weight: bold;
+}
+
+html, body {
+    height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0; 
+}
+
+.mdui-typo, body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,'Segoe UI', 'Microsoft Yahei', '微软雅黑', Helvetica, Arial, sans-serif;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    margin: auto;
+    display: block;
+}
+
+.box {
+    display: block;
+    margin: auto;
+}
+
+.panel-item-icon {
+    margin-right: 16px;
+}
+
+.mdui-panel-item-title {
+    display: inline-flex;
+    align-items: center;
+}
+
+.mdui-panel-item-body {
+    max-width: fit-content;
+}
+
+.list {
+    padding-left: 0 !important;
+}
+
+.list li {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.list .mdui-btn {
+    margin-right: 16px;
+    color: white !important;
+}
+
+.list a.mdui-btn::before {
+    content: none;
+}
+
+.host-badge {
+    background-color: #aaa;
+    border-radius: 2px;
+    color: white;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.host-badge::selection {
+    background: none;
+}
+
+*::selection {
+    background-color: rgba(247, 232, 25, 0.4);
+}
+
+.mdui-divider {
+    margin-top: 32px !important;
+    margin-bottom: 32px !important;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    color: #ccc;
+}
