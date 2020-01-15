@@ -18,7 +18,7 @@ html, body {
 }
 
 body {
-    margin: 0; 
+    margin: 0;  
 }
 
 .mdui-typo, body {
@@ -32,6 +32,21 @@ body {
     display: flex;
     align-items: center;
     height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .logo {
+        width: 300px;
+    }
+
+    .mdui-panel-item-title {
+        width: 100% !important;
+        overflow: visible;
+    }
 }
 
 .logo {
