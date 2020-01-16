@@ -74,6 +74,7 @@ body {
 
 .list {
     padding-left: 0 !important;
+    display: grid;
 }
 
 .list li {
