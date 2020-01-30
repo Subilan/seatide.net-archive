@@ -161,3 +161,55 @@ footer {
 .wish-amount .text {
     font-size: 18px;
 }
+
+.title {
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.fast {
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+}
+
+small {
+    color: #aaa;
+}

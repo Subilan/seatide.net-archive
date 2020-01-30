@@ -6,11 +6,19 @@ let span_playerWishAmountDisplay = document.getElementById("wish-amount");
 let player_id = "???";
 const submit_button = document.getElementById("get-wish");
 
+function fadeIn(HTMLElement) {
+    let c = HTMLElement.classList;
+    c.add("animated");
+    c.add("fast");
+    c.add("fadeIn");
+}
+
 submit_button.onclick = () => {
     player_id = input_playerID.value;
     if (/^[a-zA-Z0-9_]{3,16}$/.test(player_id)) {
         div_getPlayerID.style.display = "none";
         div_showWishAmount.style.display = "grid";
+        fadeIn(div_showWishAmount);
         let amount = 0;
         if (typeof data[player_id] === "number") {
             span_playerWishAmountDisplay.classList.add("geq");

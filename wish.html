@@ -10,8 +10,8 @@
 </head>
 <body>
     <div class="container mdui-theme-accent-yellow">
-        <div id="get-player-id" class="player-id">
-            <h1>键入您的游戏 ID 以查询您的 Wish 数量</h1>
+        <div id="get-player-id" class="animated faster fadeIn player-id">
+            <h1 class="title">键入您的游戏 ID 以查询您的 Wish 数量</h1>
             <div class="id-input mdui-textfield mdui-textfield-floating-label">
                 <label class="mdui-textfield-label">在此键入您的游戏 ID</label>
                 <input id="player-id" class="mdui-textfield-input" type="text" maxlength="20" pattern="^[a-zA-Z0-9_]{3,16}$"/>
@@ -22,6 +22,7 @@
             <span class="text"><span id="player-name">undefined</span> 目前有</span>
             <span id="wish-amount" class="amount-number">???</span>
             <span class="text">个 wish</span>
+            <small>刷新以继续查询</small>
         </div>
     </div>
 </body>
