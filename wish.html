@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/mdui.min.css" />
+    <title>查询 Wish</title>
+</head>
+<body>
+    <div class="container mdui-theme-accent-yellow">
+        <div id="get-player-id" class="player-id">
+            <h1>键入您的游戏 ID 以查询您的 Wish 数量</h1>
+            <div class="id-input mdui-textfield mdui-textfield-floating-label">
+                <label class="mdui-textfield-label">在此键入您的游戏 ID</label>
+                <input id="player-id" class="mdui-textfield-input" type="text" maxlength="20" pattern="^[a-zA-Z0-9_]{3,16}$"/>
+            </div>
+            <button id="get-wish" class="mdui-btn mdui-btn-raised mdui-ripple mdui-ripple-amber">查询</button>
+        </div>
+        <div id="show-wish-amount" class="wish-amount" style="display: none;">
+            <span class="text"><span id="player-name">undefined</span> 目前有</span>
+            <span id="wish-amount" class="amount-number">???</span>
+            <span class="text">个 wish</span>
+        </div>
+    </div>
+</body>
+<script src="/js/mdui.min.js"></script>
+<script src="/js/data.js"></script>
+<script src="/js/wish.js"></script>
+</html>
