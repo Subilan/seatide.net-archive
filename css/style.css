@@ -147,3 +147,15 @@ footer {
 .mdui-panel-item-title {
     overflow: visible !important;
 }
+
+
+.single-title .title {
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .single-title .title {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
