@@ -1,4 +1,4 @@
-let available_stage = [null, 1, 2];
+let available_stage = [null, 1];
 let archives = [null];
 // 世界存档
 let world = "";
