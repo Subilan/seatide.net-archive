@@ -16,6 +16,8 @@
             <div class="id-input mdui-textfield mdui-textfield-floating-label">
                 <label class="mdui-textfield-label">在此键入您的游戏 ID</label>
                 <input id="player-id" class="mdui-textfield-input" type="text" maxlength="20" pattern="^[a-zA-Z0-9_]{3,16}$"/>
+                <span class="mdui-textfield-error">无效的用户名格式。</span>
+                <span class="mdui-textfield-helper">不区分大小写，回车即可提交。</span>
             </div>
             <button id="get-wish" class="mdui-btn mdui-btn-raised mdui-ripple mdui-ripple-amber">查询</button>
         </div>

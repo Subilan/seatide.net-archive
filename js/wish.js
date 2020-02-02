@@ -13,21 +13,33 @@ function fadeIn(HTMLElement) {
     c.add("fadeIn");
 }
 
-submit_button.onclick = () => {
-    player_id = input_playerID.value;
+const main = () => {
+    player_id = input_playerID.value.toLowerCase();
+    if (!exist_players.includes(player_id)) {
+        if (document.querySelectorAll(".mdui-dialog").length === 0) mdui.alert("玩家不存在。");
+        return false;
+    }
     if (/^[a-zA-Z0-9_]{3,16}$/.test(player_id)) {
         div_getPlayerID.style.display = "none";
         div_showWishAmount.style.display = "grid";
         fadeIn(div_showWishAmount);
         let amount = 0;
-        if (typeof data[player_id] === "number") {
+        if (typeof player_wishes[player_id] === "number" || player_wishes[player_id] === true) {
             span_playerWishAmountDisplay.classList.add("geq");
-            amount = data[player_id];
+            amount = player_wishes[player_id];
         }
         span_playerIDDisplay.innerText = player_id;
-        span_playerWishAmountDisplay.innerText = amount;
-        
+        span_playerWishAmountDisplay.innerText = amount === true ? "无限制" : amount;
+        return true;
     } else {
-        mdui.alert("玩家 ID 格式不正确。");
+        if (document.querySelectorAll(".mdui-dialog").length === 0) mdui.alert("玩家 ID 格式不正确。");
+        return false;
+    }
+}
+
+submit_button.onclick = main;
+input_playerID.onkeydown = e => {
+    if (e.keyCode === 13) {
+        main();
     }
 }
