@@ -25,11 +25,12 @@ let player_wishes = {
     jacen_pvp: 2,
     drlee_lihr: 2,
     a_dish: 2,
+    tanker: 2,
+    "9527": 2,
     qiaol: true,
     subilan: true,
     sapherise: true,
     cropenfe: true,
-    "9527": 2,
 }
 
 Object.freeze(player_wishes, whitelist, exist_players);
