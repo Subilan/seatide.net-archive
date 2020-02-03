@@ -1,0 +1,139 @@
+.premium-text {
+    background: linear-gradient(270deg, #ffc440, #ffea00);
+    color: white;
+    font-size: 18px;
+    display: inline;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding: 4px;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+
+.colorful-btn {
+    color: white;
+    background: linear-gradient(270deg, #ffc440, #ffea00);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-size: 48px;
+}
+
+.card {
+    border-radius: 2px;
+    padding: 32px;
+    padding-top: 16px;
+    padding-bottom: 48px;
+    margin-right: 8px;
+    margin-left: 8px;
+    position: relative;
+}
+
+.card:first-child {
+    margin-left: 0;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.premium-container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: baseline;
+}
+
+.card-title .desc {
+    color: #aaa;
+    font-size: 18px;
+}
+
+.card-title .main, .card-title .desc{
+    margin: 8px 0;
+}
+
+.card-title .main {
+    color: #ffc400;
+}
+
+.price {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.price-container {
+    position: absolute;
+    width: calc(100% - 64px);
+    bottom: 16px;
+}
+
+.price .num {
+    font-weight: bold;
+    font-size: 28px;
+    color: #ffc400;
+}
+
+.price .off-num {
+    color: #aaa;
+}
+
+.price .symbol {
+    font-size: 18px;
+}
+
+.packages {
+    align-items: center;
+    flex-wrap: warp;
+}
+
+.commit-btn {
+    position: absolute;
+    right: -16px;
+    bottom: -16px;
+}
+
+.mdui-divider {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+}
+
+.accent {
+    color: #ffc400;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.badge {
+    background: #ffc400;
+    color: white;
+    border-radius: 2px;
+    padding: 8px;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: normal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li::before {
+    font-family: "Material Icons";
+    content: "star_outline";
+    color: #ffc400;
+    margin-right: 8px;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    line-height: 1.8;
+}
