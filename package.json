@@ -1,0 +1,26 @@
+{
+  "name": "seatide.net",
+  "version": "1.0.0",
+  "description": "The official website project for SEATiDE minecraft server.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sotapmc/seatide.net.git"
+  },
+  "keywords": [
+    "website",
+    "minecraft"
+  ],
+  "author": "Subilan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sotapmc/seatide.net/issues"
+  },
+  "homepage": "https://github.com/sotapmc/seatide.net#readme",
+  "dependencies": {
+    "countup.js": "^2.0.4"
+  }
+}
