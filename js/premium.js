@@ -6,8 +6,19 @@ window.onload = () => {
 
     document.getElementById("continue").onclick = () => {
         div_Hero.style.display = 'none';
-        div_Packages.style.display = 'flex';
+        div_Packages.style.display = IsPC() ? 'flex' : 'block';
+        if (!IsPC()) div_Packages.classList.add('mobile');
     }
+
+    function IsPC(){  
+        var userAgentInfo = navigator.userAgent;
+        var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+        var flag = true;  
+        for (var v = 0; v < Agents.length; v++) {  
+            if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }  
+        }  
+        return flag;  
+     }
 
     let cards = [
         {
@@ -64,13 +75,6 @@ window.onload = () => {
             add_price: 6.66,
             add_price_for: "纳米一套"
         },
-        {
-            title: "基础权限套餐",
-            subtitle: "权限包",
-            content: [
-               
-            ]
-        }
     ];
 
     function createCard(json, index) {
@@ -94,9 +98,9 @@ window.onload = () => {
                 ${off_price}
             </span>
         </div>
-        <button id="commit-${index}" class="commit-btn mdui-btn mdui-btn-raised mdui-color-theme mdui-btn-icon">
+        <!--<button id="commit-${index}" class="commit-btn mdui-btn mdui-btn-raised mdui-color-theme mdui-btn-icon">
             <i class="mdui-icon material-icons">arrow_forward</i>
-        </button>
+        </button>-->
     </div>`;
     }
 

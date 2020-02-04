@@ -87,8 +87,9 @@
 }
 
 .packages {
+    display: flex;
     align-items: center;
-    flex-wrap: warp;
+    min-height: 100%;
 }
 
 .commit-btn {
@@ -136,4 +137,10 @@ ul li {
     display: flex;
     align-items: center;
     line-height: 1.8;
+}
+
+.packages.mobile .card {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 16px !important;
 }
