@@ -19,7 +19,7 @@ let player_wishes = {
     iry: 3,
     yanshuqi: 3,
     sakura_ling: 3,
-    ceshi: 3,
+    ceshi: 5,
     xiuyan_: 3,
     minecommandercn: 2,
     jacen_pvp: 2,
