@@ -18,7 +18,7 @@ let player_wishes = {
     shixiaobinya: 3,
     iry: 3,
     yanshuqi: 3,
-    sakura_ling: 3,
+    sakura_ling: 5,
     ceshi: 5,
     xiuyan_: 3,
     minecommandercn: 2,
@@ -31,6 +31,8 @@ let player_wishes = {
     subilan: true,
     sapherise: true,
     cropenfe: true,
+    remind_z: true,
+    sakura_white: 5,
 }
 
 Object.freeze(player_wishes, whitelist, exist_players);
