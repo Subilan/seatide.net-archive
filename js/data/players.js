@@ -15,24 +15,26 @@ xhr.onreadystatechange = () => {
 }
 
 let player_wishes = {
-    shixiaobinya: 3,
-    iry: 3,
-    yanshuqi: 3,
+    shixiaobinya: 5,
+    iry: 5,
+    yanshuqi: 5,
     sakura_ling: 5,
     ceshi: 5,
-    xiuyan_: 3,
-    minecommandercn: 2,
-    jacen_pvp: 2,
-    drlee_lihr: 2,
-    a_dish: 2,
-    tanker: 2,
-    "9527": 2,
+    xiuyan_: 4,
+    minecommandercn: 4,
+    jacen_pvp: 4,
+    drlee_lihr: 4,
+    a_dish: 4,
+    tanker: 4,
+    "9527": 4,
     qiaol: true,
     subilan: true,
     sapherise: true,
     cropenfe: true,
     remind_z: true,
     sakura_white: 5,
+    satorilong: 2,
+    lingyu_chao: 2,
 }
 
 Object.freeze(player_wishes, whitelist, exist_players);
