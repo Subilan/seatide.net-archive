@@ -4,8 +4,8 @@
 
 ![](https://img.shields.io/badge/poweredby-SoTap-blueviolet)
 ![](https://img.shields.io/badge/mcversion-1.12.2-brightgreen)
-![](https://img.shields.io/badge/spongeapi-7.1.0-yellow)
-![](https://img.shields.io/badge/forge-2838-black)
+![](https://img.shields.io/badge/mohist-b3f7639-yellow)
+![](https://img.shields.io/badge/forge-2847-black)
 
 **SEATiDE** 是 SoTap Minecraft Server 的一个有机分支，旨在用偏商业性的方式运营高版本 Mod + 插件服务器。
 
