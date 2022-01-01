@@ -1,1 +1,1 @@
-# SEATiDE now abandoned.
+This is the old archive of SEATiDE official website. It has been deprecated since SEATiDE was abandoned in 2020. In August 2021 when SEATiDE came back alive, we built a new website whose source code can be found [here](https://github.com/seatidemc/site).
